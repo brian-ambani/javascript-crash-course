@@ -86,13 +86,40 @@ const todoJSON = JSON.stringify(todos);
 
 //For
 
-for(let i = 0; i < 10; i++) {
-    // console.log(`${i}`);
+// for(let i = 0; i < 10; i++) {
+//     // console.log(`${i}`);
+// }
+
+// // while
+// let i = 0;
+// while(i < 10) {
+//     // console.log(`${i}`);
+//     i++;
+// }
+
+// Looping through an array
+for(let todo of todos) {
+    // console.log(todo.text);
 }
 
-// while
-let i = 0;
-while(i < 10) {
-    // console.log(`${i}`);
-    i++;
-}
+// High order array methods
+// forEach, map, filter
+
+// forEach
+
+todos.forEach(function(todo) {
+    // console.log(todo.text);
+});
+
+// map
+const todoText = todos.map(function(todo) {
+    return todo.text;
+});
+
+// console.log(todoText)
+
+const completeTodo = todos.filter(function(todo) {
+    return todo.isCompleted == true;
+});
+
+console.log(completeTodo);
