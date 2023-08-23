@@ -122,4 +122,14 @@ const completeTodo = todos.filter(function(todo) {
     return todo.isCompleted == true;
 });
 
-console.log(completeTodo);
+// console.log(completeTodo);
+
+//chaining on high order array methods
+
+const incompleteTodo = todos.filter(function(todo) {
+    return todo.isCompleted == false;
+}).map(function(todo) {
+    return todo.text;
+})
+
+// console.log(incompleteTodo);
