@@ -75,5 +75,11 @@ const todos = [
         text: 'Meeting with Boss',
         isCompleted: false  
     }
-]
-// console.log(todos[2].text)
+];
+// console.log(todos[2].text);
+
+// convert todos to JSON
+
+const todoJSON = JSON.stringify(todos);
+
+// console.log(todoJSON);
