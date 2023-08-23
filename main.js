@@ -40,3 +40,40 @@ fruits.unshift('strawberries');
 fruits.pop();
 
 // console.log(fruits)
+
+
+const person = {
+    firstName: 'John',
+    lastName: 'Doe',
+    age: 30,
+    hobbies: ['music', 'movies', 'sports'],
+    address: {
+        street: '50 main st',
+        city: 'Boston',
+        state: 'MA'
+    }
+}
+person.email = 'john@gmail.com'
+// console.log(person)
+
+
+// Arrays of objects
+
+const todos = [
+    {
+        id: 1,
+        text: 'Take out trash',
+        isCompleted: true  
+    },
+    {
+        id: 2,
+        text: 'Write code',
+        isCompleted: true  
+    },
+    {
+        id: 3,
+        text: 'Meeting with Boss',
+        isCompleted: false  
+    }
+]
+// console.log(todos[2].text)
