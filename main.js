@@ -9,7 +9,7 @@ score = 32;
 // const age = 30;
 const rating = 4.5;
 const isCool = true;
-const x = null;
+// const x = null;
 const y = undefined;
 let z; //undefined
 
@@ -133,3 +133,21 @@ const incompleteTodo = todos.filter(function(todo) {
 })
 
 // console.log(incompleteTodo);
+
+
+
+// conditionals
+
+// if statement
+const x = 9;
+
+if(x === 10) {
+    // console.log('x is 10');
+} else if(x > 10) {
+    // console.log('x is greater than 10');
+} else {
+    // console.log('x is less than 10');
+};
+
+
+// ternary operator
