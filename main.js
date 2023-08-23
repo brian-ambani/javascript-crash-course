@@ -152,6 +152,38 @@ if(x === 10) {
 
 // ternary operator
 
-const m = 10;
-const color = x > 10 ? 'red' : 'blue';
-console.log(color);
+const m = 7;
+const color = m > 10 ? 'red' : 'blue';
+// console.log(color);
+
+
+//switch
+
+// switch(color) {
+//     case 'red':
+//         console.log('color is red');
+//         break;
+//     case 'blue':
+//         console.log('Color is blue');
+//         break;
+//     default:
+//         console.log('color is not red or blue');
+//         break;
+// }
+
+
+
+// functions
+// function addNums(num1 = 1, num2 = 1) {
+//     return num1 + num2;
+// }
+
+// console.log(addNums(10, 5));
+
+
+//Arrow fumctiona
+
+const addNums = (num1 = 1, num2 = 2) => {
+    return num1 + num2;
+}
+// console.log(addNums());
