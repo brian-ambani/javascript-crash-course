@@ -194,19 +194,38 @@ const addNums = (num1 = 1, num2 = 2) => {
 
 //constructor function
 
-function Person(fname, lname, dob) {
-    this.firstName= fname;
-    this.lasttName = lname;
-    this.dob = (dob);
-    this.fullName = function(){
-        return `${this.firstName} ${this.lasttName}`;
-    }
-}
+// function Person(fname, lname, dob) {
+//     this.firstName= fname;
+//     this.lasttName = lname;
+//     this.dob = (dob);
+// }
+// Person.prototype.fullName = function() {
+//     return `${this.firstName} ${this.lasttName}`;
+// }
 
-// Instantiate object
-const person1 = new Person('John', 'Doe', '10-3-1998');
-const person2 = new Person('Mary', 'Jane', '26-5-2000');
+// // Instantiate object
+// const person1 = new Person('John', 'Doe', '10-3-1998');
+// const person2 = new Person('Mary', 'Jane', '26-5-2000');
 
 // console.log(person1, person2)
 
-console.log(person1.fullName());
+// console.log(person1.fullName());
+// console.log(person1);
+
+
+//using classes
+
+class Person {
+    constructor(fname, lname, dob) {
+        this.firstName = fname;
+        this.lastName = lname;
+        this.dob = dob;
+    }
+    getFullname() {
+        return `${this.firstName} ${this.lastName}`;
+    }
+}
+
+const person1 = new Person('John', 'Doe', '10-3-1988');
+
+console.log(person1.getFullname());
